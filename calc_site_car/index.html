@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson 17</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/material-kit.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<div class="container">
+		<h3>Полноценный калькулятор цены</h3>
+		<small>Для сайта по ценам машин</small>
+		<hr>
+		<div class="row">
+			<div class="col-xs-6">
+				<div class="calc-block">
+					<h4>Выберите данные</h4>
+					<hr>
+					<span>Пробег (kм):</span>
+					<div class="form-group">
+						<input type="text" data-toggle="tooltip" data-placement="top" title="Минимум 0" value = "0" placeholder="0" class="form-control m-count"/>
+					</div>
+					<span>Количество дверей в машине:</span>
+					<div class="form-group">
+						<select name="floor-number"class="form-control floor-number">
+							<option value="0">0</option>
+							<option value="1">2</option>
+							<option value="2">4</option>
+						</select>
+					</div>
+					<br><br>
+					<span>Какая марка?</span>
+					<div class="radio">
+						<label>
+							<input type="radio" value="1" checked="true" name="typeOfHouse">BMW
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+						<input type="radio" value="2" name="typeOfHouse">Audi
+						</label>
+					</div>
+					<br>
+					<div class="togglebutton">
+						<label>
+							<input type="checkbox">Добавить полную комплектацию (если новая машина)?
+						</label>
+					</div>
+					<br>
+					<button class="btn btn-primary price-btn">Расчитать цену</button>
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<div class="calc-img">
+					<img src="img/1.jpg" alt="">
+				</div>
+				<h4>Итоговая стоимость</h4>
+				<h2><span id="price">0</span><small>евро</small></h2>
+			</div>
+		</div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/material.min.js"></script>
+	<script src="js/material-kit.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
