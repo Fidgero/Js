@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var a = 'nam0.jpg';
+		function b(){
+			document.getElementById('c').src = a;
+			a=='nam0.jpg'?a = 'nam1.jpg':a = 'nam0.jpg';
+			setTimeout('b()',1500);
+
+		}
+	</script>
+</head>
+<body onload="b()">
+	<p>
+		<img id = "c" src = "nam0.jpg" width = "650" height = "800" alt="">
+	</p>
+</body>
+</html>
