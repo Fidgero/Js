@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div></div>
+	<p>Enter your name!</p>
+	<input type="text" id="fio">
+
+	<p>Enter profession</p>
+	<input type="text" id="profession">
+
+	<p>Enter your mark</p>
+	<input type="text" id="mark">
+
+	<p>Enter your drink</p>
+	<input type="text" id="drink">
+	<button onclick="f()">ok</button>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		function f() {
+			var fio = $("#fio").val();
+			var prof = $("#profession").val();
+			var mark = $("#mark").val();
+			var drink = $("#drink").val();
+			var str = "fio="+fio+"&pr="+prof+"&mark="+mark+"&drink="+drink;
+			
+			$.ajax({
+				type: "POST",
+				url: "server.php",
+				data: str,
+				success: function(answerServer){
+					$("div").html(answerServer);
+				}
+			});
+		}
+	</script>
+</body>
+</html>
