@@ -26,5 +26,19 @@
 		"description": "Сладкий красный",
 		"order": 8,
 		"img": "watermelon.png"
+	},
+	"1238": {
+		"name": "Банан",
+		"cost": 2,
+		"description": "Сладкий и желтый",
+		"order": 2,
+		"img": "banana.png"
+	},
+	"1239": {
+		"name": "Апельсин",
+		"cost": 2.5,
+		"description": "Вкусный ораньжевый",
+		"order": 6,
+		"img": "orange.png"
 	}
 }
