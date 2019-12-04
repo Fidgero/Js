@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Списочные элементы</title>
+</head>
+<body>
+
+	<!--
+		Атрибут устанавливает номер, с которого будет начинатся список "Упорядочивание" через start работает во всез браузерах
+	-->
+	<ol start="3">
+		<li>HTML и CSS</li>
+		<li>JavaScript</li>
+		<li>JQuery</li>
+	</ol>
+	<!--
+		Атрибут reversed применяется для управление нумерацией упорядоченных списков и отображает список в обратном порядке
+	-->
+	<ol reversed>
+		<!-- Не работает в IE -->
+		<li>HTML и CSS</li>
+		<li>JavaScript</li>
+		<li>JQuery</li>
+	</ol>
+
+	<ul reversed>
+		<!-- Не работает в IE -->
+		<li>HTML и CSS</li>
+		<li>JavaScript</li>
+		<li>JQuery</li>
+	</ul>
+	<!-- Все современные браузеры поддерживают для li атрибут value. -->
+	<ol>
+		Результаты голосования на саммую популярную web - технологию. Первое место разделили JavaScript и HTML и CSS
+		<li value="1">HTML и CSS</li>
+		<li value="1">JavaScript</li>
+		<li value="2">JQuery</li>
+	</ol>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Элементы типа email, url, tel</title>
+</head>
+<body>
+	
+	<form>
+		<fieldset>
+			<legend>Контактная информация</legend>
+			<p>
+				<!--email - браузер проводит валидацию корректрости введенного email дриса-->
+				<label>
+					E-mail
+					<input type="email" name="email" title="орма данных не правельный. только в Chrome"> 
+				</label>
+			</p>
+			<p>
+				<!--url - браузер проводит валидацию корректности введеного адреса.-->
+				<label>
+					Сайт
+					<input type="url" name="website" title="бсолютный URL. Обязательно с протоколом HTTP. Пример - http://htmlSeadiness.com/">
+				</label>
+			</p>
+			<p>
+				<!--tel - мобильный браузер будет отображать зэкранную клавиатуру с цифрами-->
+				<label>
+					Телефон
+					<input type="tel" name="phone"/>
+				</label>
+			</p>
+		</fieldset>
+		<br>
+		<p>
+			<input type="submit" value="Отправить"/>
+		</p>
+	</form>
+
+</body>
+</html>
