@@ -154,3 +154,8 @@ footer a {
 footer a:hover {
 	color: #efefef;
 }
+
+img {
+	min-height: 275px;
+	max-height: 275px;
+}
