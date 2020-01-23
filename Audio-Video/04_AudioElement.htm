@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Управление воспроизведением с помощью JacaScript</title>
+</head>
+<body>
+	<input type="button" id="playButton" value="play" />
+
+	<audio id="audioElement">
+		<source src="audio/Vivaldi.mp3">
+		<source src="audio/Vivaldi.ogg">
+	</audio>
+
+	<script>
+		document.getElementById("playButton").onclick = playSound;
+
+		function playSound() {
+			var music = document.getElementById("audioElement");
+			var button = document.getElementById("playButton");
+
+			//Если аудиоплеер на паузе
+			if (music.paused) {
+				music.play(); //начать воспроизведение
+				button.value = "stop";
+			}
+			else { //иначе
+				music .pause(); //остановить воспроизведение
+				button.value = "play";
+			}
+		}
+	</script>
+</body>
+</html>
