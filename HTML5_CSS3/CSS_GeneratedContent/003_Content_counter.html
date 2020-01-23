@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>counter</title>
+	<style>
+		body {
+			counter-reset: myIndex; /*начальное значение переменной myIndex*/
+		}
+		p{
+			counter-increment: myIndex; /*переменная myIndex будет увеличиваться на 1 каждый раз когда в разметке встречается параграф*/
+		}
+
+		p::before {
+			/*перед каждым параграфом будет установлен текст "Урок №.*/
+			content: "Урок " counter(myIndex) ". ";
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<p>Любит учиться</p>
+	<p>Любит работать</p>
+	<p>Любит путишествовать</p>
+	<p>Любит отдыхать</p>
+</body>
+</html>

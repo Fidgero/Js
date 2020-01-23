@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hsl</title>
+	<style>
+		div {
+			padding: 10px;
+			margin: 10px;
+			font-weight: bold;
+			color: white;
+		}
+
+		#id1 {
+			background-color: hsl(0, 20%, 50%);
+		}
+		#id2 {
+			background-color: hsl(120, 100%, 80%);
+		}
+		#id3 {
+			background-color: hsl(240, 100%, 50%);
+		}
+	</style>
+</head>
+<body>
+	<div id="id1">hsl(0, 20%, 50%)</div>
+	<div id="id1">hsl(120, 100%, 80%)</div>
+	<div id="id1">hsl(240, 100%, 50%)</div>
+	<p>HSL (Hue, Saturation, Lightness) - цветовая модель, в которой цветовыми координатами является тон, насыщености и яркости. <a href="http://ru.wikipedia.org/wiki/HSL"> HSL - Википедия</a></p>
+	<p>Для того, чтобы задать цвет этим способом вы должны указать:</p>
+	<p>
+		<img src="color-wheel-300.gif" alt="Цветовой круг" style="height: 100px; width: 100px" />
+	</p>
+
+	<ol>
+		<li><strong>Оттенок цвета</strong> указывается в градусах поворота цветового круга (<em>0 градусов - красный, 120 градусов - зеленый, 240 градусов - голубой и тд.</em>);</li>
+		<li><strong>Насыщенность цвета </strong>указывается в процентах (<em>по мере понижения процентов цвета будет блекнуть</em>);</li>
+		<li><strong>яркость цвета</strong> также указывается в процентах (<em>0% - темный, 100% - светлый</em>).</li>
+	</ol>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>first-letter</title>
+	<style>
+		p {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 16px;
+		}
+		/*
+		Псевдоэлемент ::fist-letter определяет первого символа в тексте элемента, к которому добавляется.
+		*/
+		p::fist-letter {
+			font-family: "Times New Roman", Times, serif;
+			font-size: 32px;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque optio tempora fuga voluptatibus corporis sequi iste. Quia non ipsam culpa accusamus commodi, itaque velit ducimus earum magni consectetur aliquid. Dolor.
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem accusamus quod, temporibus consequuntur dolor. Dolorum et animi ab asperiores deserunt at quasi nisi amet corrupti impedit quisquam velit, repellat esse.
+	</p>
+</body>
+</html>

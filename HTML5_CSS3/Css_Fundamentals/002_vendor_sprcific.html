@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vendor-Specific</title>
+	<style>
+		p {
+			/*
+				Если Css свойство еще не пропало или частично реализовано используется специфическое название в соотвецтвии с производителем браузера
+			*/
+			-khtml-property: 1px;/* Konqueror */
+			-ms-property: 1px;/* Microsoft IE */
+			-moz-property: 1px;/* Mozilla (Gecko browsers) */
+			-webkit-property: 1px;/* Safari & Chrome (WebKit browser) */
+			-o-property: 1px; /* Opera */
+			property: 1px; /* Стандартизированное свойство */
+		}	
+	</style>
+</head>
+<body>
+	<p>
+		hello world
+	</p>
+</body>
+</html>

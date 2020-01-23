@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		/*правило для всех input, которые не используют атрибут type="submit"*/
+		input:not([type=submit]) {
+			border: 1px solid #999;
+			border-radius: 3px;
+			color: #aaa;
+			padding: 4px 2px;
+			margin: 2px;
+			width: 40%;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		Поле
+		<input type="name1" value="value" /> <br />
+		Поле
+		<input type="name2" value="value" /> <br />
+		Поле
+		<input type="name3" value="value" /> <br />
+		Поле
+		<input type="name4" value="value" /> <br />
+		Поле
+		<input type="name5" value="value" /> <br />
+		<input type="submit" name="name6" value="Отправить" />
+	</form>
+</body>
+</html>

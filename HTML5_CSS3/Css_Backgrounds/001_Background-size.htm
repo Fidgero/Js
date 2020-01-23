@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>background-size</title>
+	<style>
+		div {
+			width: 600px;
+			height: 400px;
+			margin: 10px;
+			border: 1px solid black;
+			background-repeat: no-repeat;
+		}
+		#id2 {
+			background-image: url("bg.jpg");
+			-moz-background-size: 50% 50%;
+			-o-background-size: 50% 50%;
+			-webkit-background-size: 50% 50%;
+		}
+		#id1 {
+			background-image: url("bg.jpg");
+			-moz-background-size: 500px 342px;
+			-o-background-size: 500px 342px;
+			-webkit-background-size: 500px 342px;
+		}
+	</style>
+</head>
+<body>
+	<div id="id1"></div>
+	<div id="id2"></div>
+</body>
+</html>

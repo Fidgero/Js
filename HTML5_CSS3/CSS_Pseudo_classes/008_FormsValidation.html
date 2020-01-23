@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>:invalid</title>
+	<style>
+		input:invalid {
+			background: #fdd;
+			font-weight: bold;
+		}
+
+		/* :valid - псевдокласс для получения элементов фори, которые корректно заполенены*/
+		input:valid {
+			background: #dfd;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<p>Адрес сайта</p>
+		<p>
+			<!-- В правильном формате http://edu.cbsystematics.com/ -->
+			<input type="url" required />
+		</p>
+
+		<p>Адрес электронной почты</p>
+		<p>
+			<!-- В првильном формате edu@cbsystematics.com -->
+			<input type="email" required />
+		</p>
+
+		<p>
+			<input type="submit" value="Отправить">
+		</p>
+	</form>
+</body>
+</html>
