@@ -1,0 +1,21 @@
+// создаем переменую с именем text-color и значением green 
+@text-color: green;
+
+h1{
+	color: @text-color;
+}
+
+h2{
+	color: @text-color;
+}
+
+/* Данный код на стороне клиента будет преоброзован в следующий Css файл
+
+h1{
+	color: green;
+}
+
+h2{
+	color: green;
+}
+*/
