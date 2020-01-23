@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form>
+	<br />
+	<!-- Данные сохраняемые вместе с формой но невидимые пользователю. -->
+	<input type="hidden" name="hidden1" value="" />
+	<br />
+
+	<!-- Поле для ввода пароля -->
+	<input type="password" name="password1" value="" />
+	<br />
+
+	<!-- Переключатель -->
+	Radio 1 <input type="radio" checked="checked" name="group1" />
+	Radio 2 <input type="radio" name="group1" />
+	<br />
+
+	<!-- Кнопка очищающая значения формы. -->
+	<input type="reset" name="reset1" value="Reset" />
+	<br />
+	<br />
+
+	<!-- Список в котором может быть выбранодин элемент --> 
+	<select name="select1">
+		<option value="value1">text 1</option>
+		<option value="value2">text 2</option>
+		<option value="value3">text 3</option>
+	</select>
+	<br />
+	<br />
+
+	<!-- Список со множественным выбором -->
+	<select multiple="multiple" name="multipleSelect1">
+		<option value="value">text</option>
+		<option value="value">text</option>
+		<option value="value">value</option>
+	</select>
+	<br />
+	<br />
+
+	<!-- Кнопка для передачи данных формы -->
+	<input type="text" name="text1" value="" />
+	<br />
+
+	<!-- Многострочное поле ввода -->
+	<textarea name="textarea1" cols="10" rows="4"></textarea>
+</form>
+</body>
+</html>

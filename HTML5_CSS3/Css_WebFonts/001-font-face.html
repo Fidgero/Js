@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Font-face</title>
+	<style>
+		@font-size {
+			font-family: heinrich; /*Имя шрифта*/
+			src: url('heinrich.ttf'), /*Местонахождение шрифта в формате .ttf*/
+			url('heinrich.eot'); /*Местонахождение шрифта в формате .eat*/
+		}
+		div {
+			font-family: heinrich;
+			font-size: 1.5em;
+		}
+	</style>
+</head>
+<body>
+	<div>Текст данного элемента шрифтом heinrich.</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate asperiores veritatis dignissimos blanditiis perferendis, aspernatur, harum sit aut, nulla et id nam autem, commodi reprehenderit vero. Ipsa libero voluptatem suscipit.</p>
+	<p><strong>Обратите внимание: </strong> Internet Explorer поддерживает шрифты в формате .eot, а остальные браузеры в формате .ttf т.е. для того, чтобы шрифт отображался корректно во всех браузерах Вы должны подключить его к странице в двух форматах.</p>
+</body>
+</html>

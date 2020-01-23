@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>font-face</title>
+	<style>
+		/* @font-face - позволяет определить насиройки шрифта и в случае необходимости загрузить их на машину пользователя */
+		@font-face {
+			font-family: heinrich; /* имя шрифта */
+			src: url('heinrich.ttf'), /* Местонохождение шрифта в формате .ttf */
+			url('heinrich.eot'); /* Местонахождение шрифта в форме .eot */
+		}
+		div{
+			font-family: heinrich;
+			font-size: 1.5em;
+		}
+	</style>
+</head>
+<body>
+	<div>Текст данного элемента написан шрифтом heinrich</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ullam eveniet natus quibusdam culpa magnam commodi maiores nam molestias enim, omnis ad tenetur, officia amet ut, iusto? Nulla, fuga, nam?</p>
+	<p><strong>lorem</strong>ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate voluptatem cumque repellat facere nemo harum reprehenderit, quod, ullam modi error incidunt inventore debitis? Esse ad eum architecto animi eos.</p>
+</body>
+</html>

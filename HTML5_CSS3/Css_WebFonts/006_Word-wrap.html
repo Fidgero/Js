@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>word-wrap</title>
+	<style type="text/css">
+		#id1 {
+			width: 150px;
+			height: 170px;
+			padding: 10px;
+			border: 1px #000 solid;
+		}
+
+		#id2 {
+			width: 150px;
+			height: 170px;
+			padding: 10px;
+			border: 1px #000 solid;
+
+			-ms-word-wrap: break-word;
+			word-wrap: break-word;
+		}
+	</style>
+</head>
+<body>
+	<p id="id1">Данный текст вполне обычен, но он имеет <b>дезоксирибонуклеиновую кислоту</b>, которая выходит за пределы енр срдеримого.</p>
+	<p id="id2">Текст <b>Текст Текст Текст Текст</b> Текст Текст Текст Текст</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transition</title>
+	<style>
+		#id1 {
+			border: 1px #000 solid;
+			padding: 10px;
+			font-size: 1.5em;
+			cursor: pointer;
+			width: 300px;
+			/*
+				с помощью свойства transition можно указать какое другое CSS свойства должно анимироватбься transition: width 2s - свойства width в течении 2 секунд должно изменить значение с текущего к новому.
+				запуск анимации происходит при смене свойства.
+			*/
+			-webkit-transition: width 2s;
+			-moz-transition: width 2s;
+			-o-transition: width 2s;
+			transition: width 2s;
+		}
+
+		/*Запуск анимации при наведении*/
+		#id1:hover {
+			width: 500px;
+		}
+	</style>
+</head>
+<body>
+	<div id="id1">Наведите курсор мыши</div>
+</body>
+</html>
